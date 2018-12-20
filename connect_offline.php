@@ -1,6 +1,6 @@
 <?php
-    $hostname="localhost";
-    $username="root";
-    $pwd="";
-    $db="tech";
+    $hostname="XXXXXXXX";
+    $username="XXXXXXXX";
+    $pwd="XXXXXXXX";
+    $db="XXXXXXXXXXX";
 ?>
