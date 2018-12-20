@@ -1,0 +1,445 @@
+
+
+
+
+
+
+  /* Global Style */
+
+
+  body {
+    font-family: "Poppins", sans-serif;
+    background-position: center;  
+    background-image: url(../images/bg-main.jpg);
+    background-position: 0px 0px;
+    background-repeat: repeat;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/* Preloader */
+
+.preloader {
+    background: #000;
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.rounder {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -26px 0 0 -26px;
+    font-size: 10px;
+    border-right: 5px solid #333333;
+    border-left: 5px solid #FC7F0A;
+    border-radius: 50%;
+    -webkit-animation: spinner 700ms infinite linear;
+    animation: spinner 700ms infinite linear;
+    z-index: 10000;
+}
+
+@-webkit-keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinner {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+.header {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #FC7F0A;
+}
+
+
+.bottam {
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  background-color:#FC7F0A;
+}
+
+
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #FC7F0A;
+  margin-bottom: 0px;
+}
+
+.progress-bar {
+  height: 7px;
+  background: #FC7F0A;
+  width: 0%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .update
+    {
+      width: 100%;
+      background-color: #e5e4de;
+    }
+    .marquee1
+    {
+      font-size: 30px;
+      font-family: Monotype Corsiva;
+    }
+    .update1
+    {
+      color: #f40283;
+    }
+    .update2
+    {
+      color: #c700ff;
+    }
+    /* for Gallery only  */
+    div.gallery
+    {
+        border: 1px solid #ccc;
+    }
+
+    div.gallery:hover
+    {
+        border: 1px solid #777;
+    }
+
+    div.gallery img
+    {
+        width: 100%;
+        height: auto;
+    }
+
+    div.desc
+    {
+        padding: 15px;
+        text-align: center;
+    }
+
+    *
+    {
+        box-sizing: border-box;
+    }
+
+    .responsive
+    {
+        padding: 0 6px;
+        float: left;
+        width: 24.99999%;
+    }
+
+    @media only screen and (max-width: 700px)
+    {
+        .responsive
+        {
+            width: 49.99999%;
+            margin: 6px 0;
+        }
+    }
+
+    @media only screen and (max-width: 500px)
+    {
+        .responsive
+        {
+            width: 100%;
+        }
+    }
+
+    .clearfix:after
+    {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---- footer -----*/
+ul.social-icons li a{
+  padding:0.5em 0;
+}
+
+
+
+@import url(http://fonts.googleapis.com/css?family=Fjalla+One);
+@import url(http://fonts.googleapis.com/css?family=Gudea);
+.footer1 {
+    background: #fff url("../images/footer/footer-bg.png") repeat scroll left top;
+  padding-top: 40px;
+  padding-right: 0;
+  padding-bottom: 20px;
+  padding-left: 0;/*  border-top-width: 4px;
+  border-top-style: solid;
+  border-top-color: #003;*/
+}
+
+
+
+.title-widget {
+  color: #898989;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1;
+  position: relative;
+  text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 25px;
+  margin-left: 0;
+  padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+.widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+
+
+.widget_nav_menu ul li {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+  position: relative;
+    text-transform: uppercase;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+  width:95%;
+}
+
+
+
+.title-median {
+    color: #636363;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+  font-family: 'Fjalla One', sans-serif;
+}
+
+.footerp p {font-family: 'Gudea', sans-serif; }
+
+
+#social:hover {
+          -webkit-transform:scale(1.1); 
+-moz-transform:scale(1.1); 
+-o-transform:scale(1.1); 
+      }
+      #social {
+        -webkit-transform:scale(0.8);
+                /* Browser Variations: */
+-moz-transform:scale(0.8);
+-o-transform:scale(0.8); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s;
+-o-transition-duration: 0.5s;
+      }           
+/* 
+    Only Needed in Multi-Coloured Variation 
+                                               */
+      .social-fb:hover {
+        color: #3B5998;
+      }
+      .social-tw:hover {
+        color: #4099FF;
+      }
+      .social-gp:hover {
+        color: #d34836;
+      }
+      .social-em:hover {
+        color: #f39c12;
+      }
+      .nomargin { margin:0px; padding:0px;}
+
+
+
+
+
+.footer-bottom {
+    background-color: #15224f;
+    min-height: 30px;
+    width: 100%;
+}
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+}
+.design {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: right;
+}
+.design a {
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.typewriter h1 {
+  width: 100%;
+text-align: center;
+
+  color: #000;
+  font-family: monospace;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+
+
+
