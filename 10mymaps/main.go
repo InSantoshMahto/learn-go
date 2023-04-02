@@ -12,7 +12,7 @@ func main() {
 	fmt.Println("JS shorts for: ", languages["JS"])
 	delete(languages, "TS")
 	fmt.Println("List of all languages: ", languages)
-	// loops are intersting in golang
+	// loops are interesting in golang
 	for kay, value := range languages {
 		fmt.Printf("For key %v value is %v\n", kay, value)
 	}
