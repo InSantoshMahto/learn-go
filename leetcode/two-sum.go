@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	var target int = 6
+	var target = 6
 	var numbers = []int{1, 2, 2, 1, 3, 2, 4}
 	resIndices := twoSum(numbers, target)
 	fmt.Println(resIndices)
