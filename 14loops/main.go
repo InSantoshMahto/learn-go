@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	fmt.Println("Welcome to loops in golang")
 
-	days := []string{"Sunday", "Monday", "Tuesday", "Wednessday", "Friday", "Saturday"}
+	days := []string{"Sunday", "Monday", "Tuesday", "Wednesday", "Friday", "Saturday"}
 	fmt.Println(days)
 
 	// for i := 0; i < len(days); i++ {

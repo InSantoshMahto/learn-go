@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
+	"io"
 	"net/http"
 	"net/url"
 	"strings"
@@ -21,10 +21,15 @@ func PerformGetRequest() {
 	if err != nil {
 		panic(err)
 	}
-	defer response.Body.Close()
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			panic(err)
+		}
+	}(response.Body)
 	fmt.Println("Status code: ", response.StatusCode)
 	// var responseString strings.Builder
-	content, _ := ioutil.ReadAll(response.Body)
+	content, _ := io.ReadAll(response.Body)
 	// byteCount, _ := responseString.Write(content)
 	// fmt.Println("ByteCount is: ", byteCount)
 	// fmt.Println(responseString.String())
@@ -46,8 +51,13 @@ func PerformPostJsonRequest() {
 	if err != nil {
 		panic(err)
 	}
-	defer response.Body.Close()
-	content, _ := ioutil.ReadAll(response.Body)
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			panic(err)
+		}
+	}(response.Body)
+	content, _ := io.ReadAll(response.Body)
 	fmt.Println(string(content))
 }
 
@@ -61,7 +71,12 @@ func PerformPostWXUrlEncodedRequest() {
 	if err != nil {
 		panic(err)
 	}
-	defer response.Body.Close()
-	content, _ := ioutil.ReadAll(response.Body)
+	defer func(Body io.ReadCloser) {
+		err := Body.Close()
+		if err != nil {
+			panic(err)
+		}
+	}(response.Body)
+	content, _ := io.ReadAll(response.Body)
 	fmt.Println(string(content))
 }

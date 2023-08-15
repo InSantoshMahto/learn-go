@@ -1,11 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 	fmt.Println("If and Else in golang")
 
-	loginCount := 10
+	loginCount := time.Now().Second()
 	var result string
 	if loginCount < 10 {
 		result = "Regular user"
@@ -16,19 +19,16 @@ func main() {
 	}
 	fmt.Println(result)
 
-	if 9%2 == 0 {
+	myNum := time.Now().Second()
+	if myNum%2 == 0 {
 		fmt.Println("Number is even")
 	} else {
 		fmt.Println("Number is odd")
 	}
 
-	if num := 3; num < 10 {
+	if num := time.Now().Second(); num < 10 {
 		fmt.Println("Number is less than 10")
 	} else {
 		fmt.Println("Number is NOT less than 10")
 	}
-
-	// if err != nil {
-
-	// }
 }

@@ -28,7 +28,7 @@ func main() {
 
 	var courses = []string{"reactJS", "Javascript", "Swift", "Python", "ruby"}
 	fmt.Println(courses)
-	var index int = 2
+	var index = 2
 	courses = append(courses[:index], courses[index+1:]...)
 	fmt.Println(courses)
 }

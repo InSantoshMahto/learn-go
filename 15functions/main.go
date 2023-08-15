@@ -14,7 +14,7 @@ func main() {
 }
 
 func greeter() {
-	fmt.Println("Namstey from golang")
+	fmt.Println("Namaste from golang")
 }
 
 func adder(valOne int, valTwo int) int {

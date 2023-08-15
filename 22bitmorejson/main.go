@@ -26,11 +26,11 @@ func EncodeJson() {
 		{"Angular Bootcamp", 299, "LearnCodeOnline.in", "hit123", nil},
 	}
 	// package this data as JSON data
-	json, err := json.MarshalIndent(courses, "", "\t")
+	jsonString, err := json.MarshalIndent(courses, "", "\t")
 	if err != nil {
 		panic(err)
 	}
-	fmt.Printf("%s\n", json)
+	fmt.Printf("%s\n", jsonString)
 }
 
 func DecodeJson() {
@@ -46,14 +46,22 @@ func DecodeJson() {
 	checkValid := json.Valid(jsonDataFromWeb)
 	if checkValid {
 		fmt.Println("JSON was valid")
-		json.Unmarshal(jsonDataFromWeb, &course)
+		err := json.Unmarshal(jsonDataFromWeb, &course)
+		if err != nil {
+			panic(err)
+			return
+		}
 		fmt.Printf("%#v\n", course)
 	} else {
 		fmt.Println("JSON WAS NOT VALID")
 	}
 	// some cases where you just want to add data to key value
 	var myOnlineData map[string]interface{}
-	json.Unmarshal(jsonDataFromWeb, &myOnlineData)
+	err := json.Unmarshal(jsonDataFromWeb, &myOnlineData)
+	if err != nil {
+		panic(err)
+		return
+	}
 	fmt.Printf("%#v\n", myOnlineData)
 	for k, v := range myOnlineData {
 		fmt.Printf("Key is %v  and value is %v and Type is: %T\n", k, v, v)
